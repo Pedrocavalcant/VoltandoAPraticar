@@ -2,31 +2,23 @@
 
 class Program
 {
-    enum Cores
-    {
-        Vermelho,
-        Azul,
-        Amarelo,
-        Verde,
-        Roxo,
-        Laranja
-    }
-
     static void Main()
     {
-        var numero = 0;
+        Teste(5);
+    }
 
-        while (numero < 10) 
+    static string Teste(int numero)
+    {
+        Console.WriteLine("Teste1");
+
+        if (numero == 5)
         {
-            numero++;
-
-            if (numero == 5)
-                continue;
-
-            Console.WriteLine(numero);
-
+            Console.WriteLine("Teste2");
+            return "Pedro";
         }
 
-        Console.WriteLine("Continua aqui");
+        Console.WriteLine("Teste3");
+
+        return "Lucas";
     }
 }
