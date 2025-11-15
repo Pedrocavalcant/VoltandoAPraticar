@@ -15,10 +15,15 @@ class Program
     static void Main()
     {
         var lista = new List<string> { "Pedro", "Lucas", "Cavalcante" };
+        var dicionario = new Dictionary<string, string>();
 
-        for (int i = 0; i < lista.Count; i++)
+        dicionario.Add("Nome1", "Pedro");
+        dicionario.Add("Nome2", "Lucas");
+        dicionario.Add("Nome3", "Cavalcante");
+
+        foreach (var i in dicionario)
         {
-            Console.WriteLine(lista[i]);
+            Console.WriteLine(i);
         }
     }
 }
