@@ -14,15 +14,11 @@ class Program
 
     static void Main()
     {
-        int numero = 1;
+        var lista = new List<string> { "Pedro", "Lucas", "Cavalcante" };
 
-
-        string resposta = numero switch
+        for (int i = 0; i < lista.Count; i++)
         {
-            > 0 and < 3 => "entre 0 e 3",
-            _ => "Nenhuma das opcoes anteriores"
-        };
-
-        Console.WriteLine(resposta);
+            Console.WriteLine(lista[i]);
+        }
     }
 }
