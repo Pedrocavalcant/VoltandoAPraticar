@@ -14,14 +14,16 @@ class Program
 
     static void Main()
     {
-        var numero = 0;
+        var numero = 10;
 
-        while (numero <= 10)
+        do 
         {
             Console.WriteLine(numero + " no 10 vai sair do loop");
 
             numero++;
         }
+        while (numero < 10) ;
         Console.WriteLine("Saiu");
+        Console.WriteLine(numero);
     }
 }
