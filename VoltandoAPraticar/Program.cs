@@ -14,16 +14,14 @@ class Program
 
     static void Main()
     {
-        var lista = new List<string> { "Pedro", "Lucas", "Cavalcante" };
-        var dicionario = new Dictionary<string, string>();
+        var numero = 0;
 
-        dicionario.Add("Nome1", "Pedro");
-        dicionario.Add("Nome2", "Lucas");
-        dicionario.Add("Nome3", "Cavalcante");
-
-        foreach (var i in dicionario)
+        while (numero <= 10)
         {
-            Console.WriteLine(i);
+            Console.WriteLine(numero + " no 10 vai sair do loop");
+
+            numero++;
         }
+        Console.WriteLine("Saiu");
     }
 }
