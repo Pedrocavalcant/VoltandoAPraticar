@@ -16,17 +16,17 @@ class Program
     {
         var numero = 0;
 
-        while (numero < 100) 
+        while (numero < 10) 
         {
+            numero++;
+
             if (numero == 5)
-                break;
+                continue;
 
             Console.WriteLine(numero);
 
-            numero++;
         }
 
         Console.WriteLine("Continua aqui");
-        Console.WriteLine(numero);
     }
 }
